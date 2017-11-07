@@ -51,7 +51,9 @@ class ViewController: UIViewController {
 		backgroundSlider.value = 0.5
 		hueSlider.value = 0.5
 		backgroundView.backgroundColor = .white
-		helloLabel.textColor = .black
+		//helloLabel.textColor = .black
+		helloLabel.textColor = UIColor(hue: 0, saturation: 0, brightness: 0, alpha: CGFloat(slider.value))
+		
 		
 	}
 	

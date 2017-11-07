@@ -125,7 +125,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="alphaSlider" destination="y7f-MN-noi" id="aLv-ro-qxb"/>
                         <outlet property="backgroundSlider" destination="Daf-aB-Vdi" id="3yR-OD-BP4"/>
                         <outlet property="backgroundView" destination="8bC-Xf-vdC" id="BsH-EH-U6D"/>
                         <outlet property="helloLabel" destination="Fhb-05-AYf" id="6TW-wo-ajo"/>
