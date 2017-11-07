@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var slider: UISlider!
 	@IBOutlet var backgroundView: UIView!
 	@IBOutlet weak var backgroundSlider: UISlider!
+	@IBOutlet weak var hueSlider: UISlider!
+	
 	
 	
 	
@@ -40,7 +42,18 @@ class ViewController: UIViewController {
 		backgroundView.backgroundColor = UIColor(hue: CGFloat(sender.value), saturation: CGFloat(sender.value), brightness: CGFloat(sender.value), alpha: CGFloat(sender.value))
 	}
 	
+	@IBAction func hueSlider(_ sender: UISlider) {
+		helloLabel.textColor = UIColor(hue: CGFloat(sender.value), saturation: CGFloat(sender.value), brightness: CGFloat(sender.value), alpha: CGFloat(sender.value))
+	}
 	
+	@IBAction func resetButton(_ sender: UIButton) {
+		slider.value = 0.5
+		backgroundSlider.value = 0.5
+		hueSlider.value = 0.5
+		backgroundView.backgroundColor = .white
+		helloLabel.textColor = .black
+		
+	}
 	
 
 }
